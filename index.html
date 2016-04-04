@@ -113,32 +113,55 @@
         </div>
         <!--Welcome-->
 
-        <div class="wrap">
+        <!--featured works-->
+        <div class="wrap block carousel_block">
             <div class="container">
                 <div class="row">
-                    <div class="span2">
-                    </div>
-                    <div class="span3">
-                        <h2 class="title">featured</h2>
-                        <div>Nunc vel arcu arcu. Nulla mollis feugiat dui id tincidunt. Aenean ac lobortis elit.
-                            <p>Enim ultrices, elementum phasellus. Mauris sed nulla sed, egestas feugiat a dictum libero, nunc sapien tristique facilisis venenatis risus, suspendisse ac nec et. Nulla sed mauris, congue duis proin nonummy adipiscing vitae interdum. Augue eget ultrices tempor, dignissim et libero. Arcu quis, arcu et mauris molestie auctor aliquam, ut vitae, turpis ac rhoncus mi sagittis arcu, ut a nullam donec.</p>
+                    <div class="span6">
+                        <div class="wrap">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="span3">
+                                        <h2 class="title">Featured</h2>
+                                        <div>Nunc vel arcu arcu. Nulla mollis feugiat dui id tincidunt. Aenean ac lobortis elit.
+                                            <p>Enim ultrices, elementum phasellus. Mauris sed nulla sed, egestas feugiat a dictum libero, nunc sapien tristique facilisis venenatis risus, suspendisse ac nec et. Nulla sed mauris, congue duis proin nonummy adipiscing vitae interdum. Augue eget ultrices tempor, dignissim et libero. Arcu quis, arcu et mauris molestie auctor aliquam, ut vitae, turpis ac rhoncus mi sagittis arcu, ut a nullam donec.</p>
+                                        </div>
+                                    </div>
+                                    <div class="span3">
+                                        <h2 class="title">Get in touch!</h2>
+                                        <form action="#" method="post">
+                                            <input class="span3" type="text" name="name" id="name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+                                            <input class="span3" type="text" name="email" id="email" value="Email" onFocus="if (this.value == 'Email') this.value = '';" onBlur="if (this.value == '') this.value = 'Email';" />
+                                            <textarea name="message" id="message" class="span3" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';" >Message</textarea>
+                                            <div class="clear"></div>
+                                            <input type="reset" class="btn dark_btn" value="Clear form" />
+                                            <input type="submit" class="btn send_btn" value="Send!" />
+                                            <div class="clear"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="span3">
-                        <h2 class="title">Get in touch!</h2>
-                        <form action="#" method="post">
-                            <input class="span3" type="text" name="name" id="name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
-                            <input class="span3" type="text" name="email" id="email" value="Email" onFocus="if (this.value == 'Email') this.value = '';" onBlur="if (this.value == '') this.value = 'Email';" />
-                            <textarea name="message" id="message" class="span3" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';" >Message</textarea>
-                            <div class="clear"></div>
-                            <input type="reset" class="btn dark_btn" value="Clear form" />
-                            <input type="submit" class="btn send_btn" value="Send!" />
-                            <div class="clear"></div>
-                        </form>
+                    <div class="span6">
+                        <h2 class="upper">featured works</h2>
+                        <ul id="mycarousel" class="jcarousel-skin-tango">
+                            <li>
+                                <div class="hover_img">
+                                    <a href="img/featured_works/1.jpg" rel="prettyPhoto[portfolio1]"><img src="img/featured_works/1.jpg" alt="" /><span class="portfolio_zoom1"></span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="hover_img">
+                                    <a href="img/featured_works/2.jpg" rel="prettyPhoto[portfolio1]"><img src="img/featured_works/2.jpg" alt="" /><span class="portfolio_zoom1"></span></a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+        <!--//featured works-->
 
     </div>
     <!--//page_container-->
@@ -161,7 +184,9 @@
 		$(document).ready(function(){	
 			//Slider
 			$('#camera_wrap_1').camera();
-		});
+            //Featured works & latest posts
+            $('#mycarousel').jcarousel();
+        });
 	</script>
 </body>
 </html>
