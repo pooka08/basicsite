@@ -55,21 +55,13 @@ img {
 }
 .follow_us a.facebook:hover {background-position:0 -30px;
 }
-.follow_us a.vimeo {background-position:-35px 0;
+.follow_us a.twitter {background-position:-35px 0;
 }
-.follow_us a.vimeo:hover {background-position:-35px -30px;
+.follow_us a.twitter:hover {background-position:-35px -30px;
 }
-.follow_us a.tumbrl {background-position:-70px 0;
+.follow_us a.instagram {background-position:-70px 0;
 }
-.follow_us a.tumbrl:hover {background-position:-70px -30px;
-}
-.follow_us a.twitter {background-position:-105px 0;
-}
-.follow_us a.twitter:hover {background-position:-105px -30px;
-}
-.follow_us a.delicious {background-position:-140px 0;
-}
-.follow_us a.delicious:hover {background-position:-140px -30px;
+.follow_us a.instagram:hover {background-position:-70px -30px;
 }
 
 /*nav*/
